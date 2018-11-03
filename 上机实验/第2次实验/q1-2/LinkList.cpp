@@ -55,27 +55,28 @@ void LinkList::InsertSort() {
         return;
     }
 
-    NodePtr p=head->next->next;
+    NodePtr p=head->next->next;  // 假设第1个元素已经排好序，所以p指向第2个元素
 
     while(p!= nullptr){
         NodePtr key=p;
-
-        // prekey最终指向key的前驱结点
-        NodePtr prekey=head;
-        while(prekey->next!=key){
-            prekey=prekey->next;
-        }
 
         NodePtr end=head->next;
         while(key->data>=end->data&&end!=key){
             end=end->next;
         }
         if(end!=key){
+            // prekey最终指向key的前驱结点
+            NodePtr prekey=head;
+            while(prekey->next!=key){
+                prekey=prekey->next;
+            }
+
             // end最终指向key的前驱结点
             NodePtr preend=head;
             while(preend->next!=end){
                 preend=preend->next;
             }
+            
             preend->next=key;
             prekey->next=key->next;
             key->next=end;

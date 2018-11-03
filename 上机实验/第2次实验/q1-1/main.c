@@ -4,7 +4,6 @@
  * Version: 1.0
  * Time: 2018-10-29
  */
-
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -22,7 +22,6 @@ void intersection(SeqList*,SeqList*);
  * 注意！题目中写明的集合，所以顺序表中不应该出现重复的元素！
  */
 int main() {
-    ElemType e;
     SeqList A;
     SeqList B;
 

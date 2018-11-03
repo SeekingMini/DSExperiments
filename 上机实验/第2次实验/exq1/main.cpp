@@ -54,7 +54,6 @@ void merge(LinkList* A, LinkList* B){
                 qa=qa->next;
             }
 
-
         pb->next=pa->next;
         pa->next=pb;
         pa=pa->next;

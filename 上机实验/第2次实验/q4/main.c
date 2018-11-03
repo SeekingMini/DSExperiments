@@ -36,6 +36,7 @@ int main() {
     int mid=L.length/2;
     int leftcount=mid;
     int rightcount=L.length-mid-1;
+
     for(int i=mid-1;i>=0;i--){
         if(L.arr[mid]==L.arr[i])leftcount--;
     }
@@ -49,6 +50,7 @@ int main() {
     else{
         printf("-1");
     }
+    return 0;
 }
 
 /*

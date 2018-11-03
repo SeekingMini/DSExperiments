@@ -50,6 +50,7 @@ void intersection(LinkList* A, LinkList* B){
         ElemType e=pa->data;
         NodePtr pb=B->getHead()->next;
         bool flag=false;
+
         while(pb!= nullptr){
             if(pa->data!=pb->data){
                 pb=pb->next;
@@ -59,10 +60,11 @@ void intersection(LinkList* A, LinkList* B){
                 break;
             }
         }
+
         if(!flag){
             A->delElem(e);
         }
+
         pa=pa->next;
     }
-
 }
