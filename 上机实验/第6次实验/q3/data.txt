@@ -1,0 +1,11 @@
+Group 1
+-------
+A B D H # # E # F # # # C G # # # 
+
+Group 2
+-------
+A B D # E # # # C F I # # G # H # # #
+
+Group 3
+-------
+A B C # D # E # # # #
